@@ -37,8 +37,11 @@ def parameterize_model(model, transcriptomic):
 
     return riptide
 
+model = cobra.io.read_sbml_model('/Users/yahyafarooqi/Documents/AntiGEM/models/subtilis_ iYO844.xml')
+transcriptomic = pd.read_csv('/Users/yahyafarooqi/Documents/AntiGEM/Data/intermediate/transcriptomics_data.tsv', sep='\t')
 
 
+object = parameterize_model(model, transcriptomic)
 
 
 
